@@ -1,31 +1,57 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>OmerXPox109</title>
+  <title>OmerXPox109 - تحميل الفيديو</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f2f2f2;
+      font-family: 'Arial', sans-serif;
+      background-color: #f0f0f0;
       text-align: center;
       padding: 50px;
+      direction: rtl;
     }
     h1 {
-      color: #333;
+      color: #222;
     }
-    p {
-      color: #666;
+    video {
+      max-width: 90%;
+      height: auto;
+      margin: 20px 0;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+    }
+    a.download-button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #007acc;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background-color 0.3s;
+    }
+    a.download-button:hover {
+      background-color: #005a99;
     }
     footer {
-      margin-top: 50px;
-      color: #999;
+      margin-top: 40px;
+      color: #666;
     }
   </style>
 </head>
 <body>
-  <h1>مرحبًا بك في OmerXPox109</h1>
-  <p>هذا موقع إلكتروني تجريبي تم إنشاؤه بواسطة Omer.</p>
+  <h1>فيديو خاص بـ OmerXPox109</h1>
+
+  <video controls>
+    <source src="videoxpox.mp4" type="video/mp4">
+    المتصفح لا يدعم تشغيل الفيديو.
+  </video>
+
+  <br>
+  <a href="videoxpox.mp4" class="download-button" download>تحميل الفيديو</a>
+
   <footer>
     &copy; 2025 OmerXPox109. جميع الحقوق محفوظة.
   </footer>
