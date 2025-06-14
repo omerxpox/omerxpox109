@@ -1,59 +1,33 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>OmerXPox109 - تحميل الفيديو</title>
-  <style>
-    body {
-      font-family: 'Arial', sans-serif;
-      background-color: #f0f0f0;
-      text-align: center;
-      padding: 50px;
-      direction: rtl;
-    }
-    h1 {
-      color: #222;
-    }
-    video {
-      max-width: 90%;
-      height: auto;
-      margin: 20px 0;
-      border: 2px solid #ccc;
-      border-radius: 10px;
-    }
-    a.download-button {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 10px 20px;
-      background-color: #007acc;
-      color: white;
-      text-decoration: none;
-      border-radius: 8px;
-      transition: background-color 0.3s;
-    }
-    a.download-button:hover {
-      background-color: #005a99;
-    }
-    footer {
-      margin-top: 40px;
-      color: #666;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Insulin Dose Calculator</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>فيديو خاص بـ OmerXPox109</h1>
+  <div class="container">
+    <h1>حاسبة جرعة الإنسولين</h1>
+    <label>عدد الكربوهيدرات (جم):</label>
+    <input type="number" id="carbs" placeholder="مثلاً 45" />
+    
+    <label>السكر الحالي (mg/dL):</label>
+    <input type="number" id="current" placeholder="مثلاً 250" />
+    
+    <label>الهدف (mg/dL):</label>
+    <input type="number" id="target" value="120" />
+    
+    <label>معامل التصحيح (ISF):</label>
+    <input type="number" id="isf" value="50" />
+    
+    <label>معامل الكربوهيدرات (ICR):</label>
+    <input type="number" id="icr" value="10" />
+    
+    <button onclick="calculateDose()">احسب</button>
+    <h2 id="result"></h2>
+  </div>
 
-  <video controls>
-    <source src="videoxpox.mp4" type="video/mp4">
-    المتصفح لا يدعم تشغيل الفيديو.
-  </video>
-
-  <br>
-  <a href="videoxpox.mp4" class="download-button" download>تحميل الفيديو</a>
-
-  <footer>
-    &copy; 2025 OmerXPox109. جميع الحقوق محفوظة.
-  </footer>
+  <script src="script.js"></script>
 </body>
 </html>
